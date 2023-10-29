@@ -28,4 +28,5 @@ else:
     agregar_habitacion(nombre_habitacion)
     print("Nueva habitación agregada con éxito.")
 print("hola amigos")
+ adios
 
