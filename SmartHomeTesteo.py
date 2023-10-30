@@ -2,7 +2,7 @@
 
 
 username = input("Ingrese su username: ") #Input cuando tengamos capacidad de guardar datos
-usuariosValidos = ["edu123","dereck456","felipe789", "wanda91011"] #Lista de constantes por mientras
+usuariosValidos = ["edu123","dereck456","felipe789", "wanda91011"] #Lista de datos constantes por mientras
 
 if username in usuariosValidos:
     print("Usuario válido")
