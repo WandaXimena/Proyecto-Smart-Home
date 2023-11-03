@@ -1,13 +1,13 @@
 #---Proyecto smart home---
 
-
 username = input("Ingrese su username: ") #Input cuando tengamos capacidad de guardar datos
-usuariosValidos = ["edu123","dereck456","felipe789", "wanda91011"] #Lista de datos constantes por mientras
+usuariosValidos = [] 
+usuariosValidos.append(username) #Para guardar en futura lista de usuarios válidos
 
 if username in usuariosValidos:
     print("Usuario válido")
-    ingresoContraseña = input("Ingresa tu contrasena: ")
-    contraseña = ("SmartHome") #Input cuando tengamos capacidad de guardar datos, contraseña por mientras
+    ingresoContraseña = input("Ingrese su contraseña: ")
+    contraseña = ingresoContraseña
     if contraseña == ingresoContraseña:
         print("Bienvenido")
 else:
@@ -17,18 +17,15 @@ else:
 habitaciones = []
 
 def agregarHabitacion():
-        while True:
+    while True:
+        habitacion = input("Ingrese una habitación:")
+        habitaciones.append(habitacion)
 
-            habitacion = input("Ingrese una habitación:")
-            habitaciones.append(habitacion)
-
-            opcion = input("Desea agregar habitacion otra vez 1 si 2 no:")
-
-            if opcion != "1":
-                break
+        opcion = input("¿Desea agregar habitacion otra vez? 1 si 2 no:")
+        if opcion != "1":
+            break
 
 
 agregarHabitacion()
 
-print("Las habitaciones son: ", habitaciones)
-
+print("La lista de habitaciones son: ", habitaciones)
