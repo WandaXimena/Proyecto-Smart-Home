@@ -13,6 +13,13 @@ if username in usuariosValidos:
 else:
     print("Usuario inválido")
 
+nombre = input("Ingrese su nombre: ")
+
+apellidos = input("Ingrese sus apellidos: ")
+
+edad = input("Ingrese su fecha de cumpleaños(utilizar numero):  ")
+
+print("Bienvenido ", nombre, apellidos)
 
 habitaciones = []
 
