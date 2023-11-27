@@ -1,3 +1,24 @@
+#---Proyecto smart home---
+import os
+"""---Anotaciones para abrir y cerrar archivos correctamente---
+a: Abre el archivo para agregar datos al final. Si el archivo no existe, lo
+crea.
+r: Abre el archivo para leer los datos que contiene.
+w: Abre el archivo para escribir datos. Si el archivo no existe, lo crea. Si
+existe sobrescribe la informacion que contenga.
+a+: Abre el archivo para leer y escribir datos en el.
+"""
+import os
+def crearArchivoUsuarios(): #x ahora crea un archivo para los usuarios para posteriormente añadir la info
+    with open("usuarios.txt", "w") as file:
+        pass
+    print("\n---¡Archivo de info de usuario creado correctamente!---\n")
+
+def crearHabitacionDispositivos(): #x ahora crea un archivo para los usuarios para posteriormente añadir la info
+    with open("habitacionDispisitivos.txt", "w") as file:
+        pass
+    print("\n---¡Archivo de info de usuario creado correctamente!---\n")
+
 def agregarHabitacionDispositivos():
     casas = []
 
