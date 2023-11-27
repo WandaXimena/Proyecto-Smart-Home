@@ -43,3 +43,43 @@ def agregarHabitacionDispositivos():
 
     print("\n---¡Archivo de habitaciones y dispositivos creado correctamente---\n")
 
+def leerUsuarios():
+    try:
+        file = open("usuarios.txt", "r")
+        mensaje= file.read()
+        print(mensaje)
+        file.close()
+
+    except FileNotFoundError:
+        pass
+        print("Archivo no de usarios encontrado.haga uno")
+
+
+
+def leerHabitacionesDispositivos():
+    try:
+        file = open("habitacionDispositivos.txt", "r")
+        mensaje= file.read()
+        print(mensaje)
+
+    except FileNotFoundError:
+        pass
+        print("Archivo de habitacionesDispositivos no encontrado. Haga uno")
+
+
+def menu():
+    print("Bienvenido al programa. Seleccione una opcion")
+    opcion = str(input("Seleciione una opcion: 1=Registrar usuario 2= Ver info de usuario Otra tecla=Ver info de dispositivos: "))
+    if opcion == "1":
+        crearArchivoUsuarios()
+        agregarInfoUsuario()
+        agregarHabitacionDispositivos()
+        leerHabitacionesDispositivos()
+    elif opcion =="2":
+        leerUsuarios()
+    else:
+        leerHabitacionesDispositivos()
+    
+
+menu()
+
